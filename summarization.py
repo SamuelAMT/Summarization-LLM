@@ -8,4 +8,5 @@ the National Aeronautics and Space Administration (NASA), which succeeded in lan
 It was first conceived during Dwight D. Eisenhower's administration
 """
 
-summarizer(article, max_length=20, min_length=8, do_sample=False)
+summary = summarizer(article, max_length=60, min_length=30, do_sample=False)
+print(summary[0]['summary_text'])
